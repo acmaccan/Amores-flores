@@ -1,0 +1,14 @@
+doctype html
+html
+    head
+        title #{nombre}
+        meta(charset="UTF-8")
+        link(rel="stylesheet" href="flor.css")
+
+    body
+        main
+            h1 #{nombre}
+            figure
+                img(src=data.imagen width=750)
+                figcaption #{data.texto}
+            a(href="/") Regresar

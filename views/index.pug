@@ -1,0 +1,21 @@
+doctype html
+html
+    head
+        //title Flores
+        title #{titulo}
+        meta(charset="UTF-8")
+        link(rel="stylesheet" href="main.css")
+
+    body
+        main
+            //h1 Flores hermosas
+            h1 #{titulo}
+            figure
+                img(src=imagen)
+                figcaption #{texto}
+
+            //A continuación para llamar el array del 35 y 36
+            ul
+                each flor in flores
+                    li 
+                        a(href="flor/"+flor.nombre) #{flor.nombre} &nbsp; | &nbsp;
